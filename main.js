@@ -248,5 +248,6 @@ function renderizar() {
 
 botonAtras.addEventListener('click', retrocederPagina);
 botonSiguiente.addEventListener('click', avanzarPagina);
+window.addEventListener('resize', renderizar);
 
 renderizar();
