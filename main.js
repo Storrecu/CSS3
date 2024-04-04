@@ -8,13 +8,13 @@ let elementosPorPagina = 6;
 let paginaActual = 1;
 
 const cambiarNumElementosPorPag = () => {
-  if (screen.width >= 1400) {
+  if (window.innerWidth >= 1400) {
     return 24;
-  } else if (screen.width >= 1200) {
+  } else if (window.innerWidth >= 1200) {
     return 12;
-  } else if (screen.width >= 768) {
+  } else if (window.innerWidth >= 768) {
     return 6;
-  } else if (screen.width <= 320) {
+  } else if (window.innerWidth <= 320) {
     return 3;
   } else {
     return 6;
