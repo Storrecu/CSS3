@@ -11,7 +11,7 @@ const cambiarNumElementosPorPag = () => {
   if (window.innerWidth >= 1400) {
     return 27;
   } else if (window.innerWidth >= 1200) {
-    return 16;
+    return 20;
   } else if (window.innerWidth >= 768) {
     return 8;
   } else if (window.innerWidth >= 390) {

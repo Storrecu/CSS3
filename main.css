@@ -129,7 +129,7 @@ body {
 
         a {
           margin: 1rem;
-          width: 50vw;
+          width: 55vw;
           height: 150px;
           border: 3px solid #285543;
           border-radius: 10px;
@@ -241,7 +241,7 @@ body {
           grid-template-rows: auto;
           justify-content: center;
           align-content: center;
-          padding: 1rem 0;
+          padding: 0.5em 0;
 
           a {
             width: 20vw;
@@ -272,11 +272,11 @@ body {
           grid-template-columns: repeat(4, auto);
           grid-template-rows: repeat(3, 90px);
           overflow: auto;
-          gap: 2.3em;
+          gap: 2em;
 
           a {
             width: 12vw;
-            height: 90px;
+            height: 105px;
           }
         }
       }
@@ -302,11 +302,11 @@ body {
           grid-template-columns: repeat(6, auto);
           grid-template-rows: repeat(4, 90px);
           overflow: auto;
-          gap: 1em;
+          gap: 0.75em;
 
           a {
             width: 9vw;
-            height: 80px;
+            height: 95px;
           }
         }
       }
