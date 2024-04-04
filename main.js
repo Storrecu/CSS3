@@ -9,17 +9,16 @@ let paginaActual = 1;
 
 const cambiarNumElementosPorPag = () => {
   if (screen.width >= 1400) {
-    elementosPorPagina = 24;
+    return 24;
   } else if (screen.width >= 1200) {
-    elementosPorPagina = 12;
+    return 12;
   } else if (screen.width >= 768) {
-    elementosPorPagina = 6;
+    return 6;
   } else if (screen.width <= 320) {
-    elementosPorPagina = 3;
+    return 3;
   } else {
-    elementosPorPagina = 6;
+    return 6;
   }
-  return elementosPorPagina;
 };
 
 const proyectosAcabados = [
@@ -224,13 +223,13 @@ function gestionarBotones() {
 
 function renderizar() {
   listadoProyectos.innerHTML = '';
-  cambiarNumElementosPorPag();
-  const primerosCincoProyectos = obtenerPorcionListadoProyectos(paginaActual);
+  elementosPorPagina = cambiarNumElementosPorPag();
+  const primerosProyectos = obtenerPorcionListadoProyectos(paginaActual);
   gestionarBotones();
 
-  console.log('proyectos a mostrar en la pagina 1', primerosCincoProyectos);
+  console.log('proyectos a mostrar en la pagina 1', primerosProyectos);
 
-  primerosCincoProyectos.forEach((proyecto) => {
+  primerosProyectos.forEach((proyecto) => {
     const enlace = document.createElement('a');
     enlace.href = proyecto.linkRef;
     enlace.setAttribute('target', '_blank');
