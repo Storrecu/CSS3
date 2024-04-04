@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/neko.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  main {
+    width: 100%;
+    height: 100%;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 1em;
+
+      li {
+        color: #433751;
+        background-color: #a0e6a0;
+        width: 60vw;
+        font-size: 1.3em;
+        text-align: center;
+      }
+      :hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #49966a;
+        transform: translateX(1vw);
+        border-radius: 0 10px 10px 0;
+        box-shadow: -11px 11px 5px 3px#8c8a8c;
+      }
+
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  body {
+    main {
+      ul {
+        padding: 1rem;
+        align-items: start;
+
+        li {
+          width: 20vw;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../imagenes/land3.jpg);
+  background-position: center;
+}
+
+body {
+  width: 80%;
+  height: 90%;
+  background-image: url(../imagenes/pat2.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  margin: 2.5rem auto 2.5rem;
+
+  main {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    section {
+      width: 80%;
+      margin: auto;
+    }
+
+    .alumno {
+      margin-top: 1rem;
+
+      h1 {
+        width: 100%;
+        color: #fff;
+        font-size: 28px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 1px solid #ec7c8f;
+        background-color: #f4b6c0;
+        padding: 0.5rem;
+      }
+
+      article {
+        background-color: #7cb37c;
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+          color: #fff;
+          margin: 1rem;
+          text-align: center;
+        }
+
+        div {
+          width: 170px;
+          height: 170px;
+          margin: 0 auto 1rem;
+          background-image: url(../imagenes/myself.jpeg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          clip-path: circle(50% at 50% 50%);
+        }
+        p {
+          width: 100%;
+          color: #fff;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 1.5;
+          background: linear-gradient(
+            90deg,
+            #ec7c8f 0%,
+            #f4b6c0 48%,
+            #ec7c8f 100%
+          );
+          text-transform: uppercase;
+          text-align: center;
+          background-color: #e6cc7b;
+        }
+      }
+
+      .link-portafolio {
+        display: block;
+        width: 15vw;
+        margin: 0.5rem auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .practicas {
+      background-color: lightgreen;
+      border-radius: 20px;
+      margin: 1rem auto;
+
+      h1 {
+        display: none;
+        color: #fff;
+        padding: 1rem;
+        font-size: 28px;
+        width: 100%;
+        border-radius: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 1px solid #ec7c8f;
+        background-color: #f4b6c0;
+      }
+
+      .proyectos {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 0.5rem;
+        overflow: auto;
+        margin: auto;
+
+        a {
+          margin: 1rem;
+          width: 50vw;
+          height: 150px;
+          border: 3px solid #285543;
+          border-radius: 10px;
+
+          div {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+
+      .botones {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 1rem;
+        gap: 1rem;
+
+        .btn1,
+        .btn2 {
+          background-color: transparent;
+          border: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .fa-solid {
+            color: #e9677d;
+            font-size: 18px;
+
+            &:hover {
+              color: #c032d6;
+            }
+          }
+        }
+
+        .info-pagina {
+          color: #285543;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  body {
+    width: 90%;
+
+    main {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 1rem;
+
+      section {
+        margin: 0;
+      }
+
+      .alumno {
+        width: 30%;
+        margin: 0.75rem;
+
+        h1 {
+          display: none;
+        }
+
+        article {
+          h2 {
+            margin: 1rem;
+          }
+
+          p {
+            border-radius: 0 0 10px 10px;
+          }
+        }
+
+        .link-portafolio {
+          width: 10vw;
+        }
+      }
+
+      .practicas {
+        width: 60%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          display: block;
+        }
+        .proyectos {
+          width: 100%;
+          grid-template-columns: repeat(2, 45%);
+          grid-template-rows: auto;
+          justify-content: center;
+          align-content: center;
+          padding: 1rem 0;
+
+          a {
+            width: 20vw;
+            height: 120px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  body {
+    main {
+      width: 85vw;
+      margin: auto;
+
+      .alumno {
+        width: 20%;
+      }
+
+      .practicas {
+        width: 75%;
+        margin: 0;
+
+        .proyectos {
+          grid-template-columns: repeat(4, auto);
+          grid-template-rows: repeat(3, 90px);
+          overflow: auto;
+
+          a {
+            width: 12vw;
+            height: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1400px) {
+  body {
+    main {
+      width: 85vw;
+      margin: auto;
+
+      .alumno {
+        width: 20%;
+      }
+
+      .practicas {
+        width: 75%;
+        margin: 0;
+
+        .proyectos {
+          grid-template-columns: repeat(6, auto);
+          grid-template-rows: repeat(4, 90px);
+          overflow: auto;
+
+          a {
+            width: 9vw;
+            height: 80px;
+          }
+        }
+      }
+    }
+  }
+}
