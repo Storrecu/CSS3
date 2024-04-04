@@ -2,20 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 
 html {
   width: 100vw;
   height: 100vh;
-  background-image: url(../imagenes/land3.jpg);
+  background-image: url(./imagenes/land3.jpg);
+  /* land3.jpg */
   background-position: center;
 }
 
 body {
   width: 80%;
   height: 90%;
-  background-image: url(../imagenes/pat2.jpg);
+  background-image: url(./imagenes/pat2.jpg);
   background-size: cover;
   border-radius: 20px;
   margin: 2.5rem auto 2.5rem;
@@ -64,7 +65,7 @@ body {
           width: 170px;
           height: 170px;
           margin: 0 auto 1rem;
-          background-image: url(../imagenes/myself.jpeg);
+          background-image: url(./imagenes/myself.jpeg);
           background-size: contain;
           background-repeat: no-repeat;
           clip-path: circle(50% at 50% 50%);
