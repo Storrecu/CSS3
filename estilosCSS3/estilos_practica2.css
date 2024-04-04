@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 
 html {
@@ -16,7 +16,7 @@ body {
   background-image: url(../imagenes/neko.avif);
   background-size: cover;
   background-repeat: no-repeat;
-  
+
   main {
     width: 100%;
     height: 100%;
@@ -46,7 +46,6 @@ body {
         border-radius: 0 10px 10px 0;
         box-shadow: -11px 11px 5px 3px#8c8a8c;
       }
-
     }
   }
 }

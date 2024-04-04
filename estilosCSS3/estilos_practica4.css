@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 
 html {
@@ -23,8 +23,9 @@ body {
     padding: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 15em;
 
     div {
       border: 2px solid black;
@@ -38,7 +39,6 @@ body {
       background-size: cover;
       box-shadow: 30px 30px 10px 25px #6380cb;
 
-      
       &:hover {
         box-shadow: 30px 30px 10px 10px #c9c043;
       }
@@ -48,7 +48,6 @@ body {
       background-image: url(../imagenes/texture2.jpg);
       background-size: cover;
       box-shadow: -30px 30px 10px 10px #6380cb, 30px -30px 10px 10px #c9c043;
-      
 
       &:hover {
         box-shadow: -30px 30px 10px 10px #c9c043, 30px -30px 10px 10px #6380cb;
@@ -57,7 +56,7 @@ body {
   }
 }
 
-@media all and (min-width:768px) {
+@media all and (min-width: 768px) {
   body {
     main {
       flex-direction: row;

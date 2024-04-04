@@ -2,12 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter";
-}
-
-html {
-  width: 100vw;
-  height: 100vh;
+  font-family: 'Inter';
 }
 
 body {
@@ -25,10 +20,11 @@ body {
     justify-items: center;
     gap: 1em;
     padding: 1rem;
+    margin: 1rem;
 
     div {
-      width: 15em;
-      height: 200px;
+      width: 12em;
+      height: 185px;
       border: 2px solid #000000;
       border-radius: 10px;
     }
@@ -38,7 +34,7 @@ body {
       box-shadow: 20px 20px 0px 0px #27a12d;
     }
     .box-2 {
-      background-color: rgb(222, 217, 115); 
+      background-color: rgb(222, 217, 115);
       box-shadow: -30px 30px 10px 0px #2774a1;
     }
     .box-3 {

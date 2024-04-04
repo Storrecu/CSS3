@@ -2,12 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter";
-}
-
-html {
-  width: 100vw;
-  height: 100vh;
+  font-family: 'Inter';
 }
 
 body {
@@ -26,6 +21,7 @@ body {
     align-content: center;
     gap: 4em;
     padding: 1rem;
+    margin: 1rem;
 
     div {
       width: 15em;
@@ -44,7 +40,7 @@ body {
       background: linear-gradient(90deg, #0001ff 0%, #00ff0c 49%, #fb0000 100%);
     }
     .box-4 {
-      background: linear-gradient(to right, #f6ff00 10%, #00ffff 80%, #ffa500 );
+      background: linear-gradient(to right, #f6ff00 10%, #00ffff 80%, #ffa500);
     }
   }
 }
